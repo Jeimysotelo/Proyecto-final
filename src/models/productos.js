@@ -12,7 +12,7 @@ const productosSchema = new Schema({
         type: Number,
         default: 0
     },
-    urlimagen: {
+    urlImagen: {
         type:String,
     },
     quantity: {
