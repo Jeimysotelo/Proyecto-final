@@ -4,11 +4,11 @@ const router = Router();
 
 /** Definir las rutas para la entidad 'Categoria' */
 // http://localhost:4000/api/categories
-router.get( '/', getEventos );
-router.get( '/:id', getEventoById );
-router.post( '/', createEvento );
-router.patch( '/:id', updateEventoById );
-router.delete( '/:id', removeEventoById );
+router.get( '/eventos', getEventos );
+router.get( '/eventos/:id', getEventoById );
+router.post( '/eventos', createEvento );
+router.patch( '/eventos/:id', updateEventoById );
+router.delete( '/eventos/:id', removeEventoById );
 
 
 module.exports = router;        // Exportar todas las rutas definidas, para que queden disponibles en toda la aplicacion

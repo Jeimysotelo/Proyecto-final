@@ -4,11 +4,11 @@ const router = Router();
 
 /** Definir las rutas para la entidad 'Categoria' */
 // http://localhost:4000/api/categories
-router.get( '/', getproductos );
-router.get( '/:id', getproductosById );
-router.post( '/', createproductos );
-router.patch( '/:id', updateproductosById );
-router.delete( '/:id', removeproductosById );
+router.get( '/products', getproductos );
+router.get( '/products/:id', getproductosById );
+router.post( '/products', createproductos );
+router.patch( '/products/:id', updateproductosById );
+router.delete( '/products/:id', removeproductosById );
 
 
 module.exports = router;        // Exportar todas las rutas definidas, para que queden disponibles en toda la aplicacion

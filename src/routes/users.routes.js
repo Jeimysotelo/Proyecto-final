@@ -5,9 +5,9 @@ const router = Router();
 
 /** Definir las rutas para la autenticación */
 // http://localhost:5000/api/auth/register
-router.post('/register', registerUser);
+router.post('/auth/register', registerUser);
 
 // http://localhost:5000/api/auth/login
-router.post('/login', loginUser);
+router.post('/auth/login', loginUser);
 
 module.exports = router; // Exportar todas las rutas definidas
